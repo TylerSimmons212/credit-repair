@@ -1,0 +1,92 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body-sections{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 30vw;
+    border: solid black 2px;
+    height: 50vh;
+    margin: auto 5px;
+}
+.column h2{
+    font-family: work-sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.column p{
+    font-family: source-sans-pro, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.column h1{
+    font-family: work-sans, sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: rgb(99, 167, 10);
+}
+.body h4{
+    font-family: source-sans-pro, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.body button{
+    height: 7vh;
+    width: 21%;
+    margin-top: 10px;
+    background-color: #FF8802;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    margin: 50px;
+    transition: 0.1s color linear;
+}
+.body button:hover{
+    border: solid 2px #FF8802;
+    color: #FF8802;
+    background-color: white
+}
+.column img{
+    width:40%;
+}
+@media(max-width: 990px){
+    .body button{width:40%}
+    .column h2{font-size: 15px}
+    .column p{font-size: 15px}
+}
+@media(max-width:765px){
+    .body-sections {flex-direction: column}
+    .column {
+        width: 90%;
+        margin: 10px auto;
+        box-shadow: 5px 5px 5px black;
+    }
+    .column img{width: 20%; margin-top:30px;}
+    .column h1{font-size: 30px; margin-bottom: 45px;}
+    .body button{width:80%}
+    .column {height: 40vh;}
+    .body-sections-1{line-height: 0;}
+    .body-sections-2{line-height: 0;}
+    .body-sections-3{line-height: 0;}
+}
+@media(max-width:420px){
+    .body h4{font-size: 15px;}
+}
+@media(max-width:357px){
+    .body h4{font-size: 12px;}
+    .body h1{font-size: 25px;}
+    .column {height: 35vh;}
+}
+@media(max-width:320px){
+    .column{height: 40vh;}
+}
